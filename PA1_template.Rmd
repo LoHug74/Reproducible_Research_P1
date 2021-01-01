@@ -7,7 +7,7 @@ Coursera Reproducible research Assignment 1
 ==============================================
 
 ```{r echo = FALSE}
-setwd('C:/Users/huguel/Documents/Training/R/Coursera/Reproducible Research')
+setwd('C:/Users/huguel/Documents/Training/R/Coursera/Reproducible Research/Reproducible_Research_P1')
 ```
 
 ### Import data from local drive as CSV format and do a quick discovery
