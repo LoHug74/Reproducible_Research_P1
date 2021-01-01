@@ -1,9 +1,7 @@
 ---
 output:
-  word_document: 
-    keep_md: yes
-  html_document: default
-  pdf_document: default
+  html_document: 
+      keep_md: yes
 ---
 Coursera Reproducible research Assignment 1
 ==============================================
@@ -118,7 +116,7 @@ hist (df2$steps_p_day
         , xlab = 'Nb of steps per day')
 ```
 
-![](PA1_template_files/figure-docx/unnamed-chunk-3-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 Calculate and report the mean and median of the total number of steps taken per day
 
@@ -147,7 +145,7 @@ hist (df2$mean_steps_p_day
         , xlab = 'Nb of steps per day')
 ```
 
-![](PA1_template_files/figure-docx/unnamed-chunk-4-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 ```r
 hist (df2$med_steps_p_day
@@ -155,7 +153,7 @@ hist (df2$med_steps_p_day
         , xlab = 'Nb of steps per day')
 ```
 
-![](PA1_template_files/figure-docx/unnamed-chunk-4-2.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-4-2.png)<!-- -->
 we can see from above charts that the mode of the average number of steps per day is between 35 and 40
 when the median is at 0
 
@@ -190,7 +188,7 @@ ggplot(df2, aes(x = date, y = mean_steps_p_day)) +
 ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 ```
 
-![](PA1_template_files/figure-docx/unnamed-chunk-5-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps 
 
@@ -293,7 +291,7 @@ hist (df_joined$steps_p_day_mean
         , xlab = 'mean steps per day')
 ```
 
-![](PA1_template_files/figure-docx/unnamed-chunk-9-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 ```r
 hist (df_joined$steps_p_day_med
@@ -301,7 +299,7 @@ hist (df_joined$steps_p_day_med
         , xlab = 'median steps per day')
 ```
 
-![](PA1_template_files/figure-docx/unnamed-chunk-9-2.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-9-2.png)<!-- -->
 
 Do these values differ from the estimates from the first part of the assignment? 
 
@@ -370,4 +368,4 @@ ggplot(df_joined, aes(x = interval, y = steps)) +
       labs (title = 'average number of steps taken, across weekday or weekend days', x = 'Interval', y = 'Number of steps')
 ```
 
-![](PA1_template_files/figure-docx/unnamed-chunk-12-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
